@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+</style>
+{% endblock %}
+{% block content %}
+<h1>Index</h1>
+<form action="" method="post">
+    Age:<input id="age" name="age">
+    Gender:
+    MALE - <input type="radio" name="gender" value="0" placeholder="Male">
+    FEMALE - <input type="radio" name="gender" value="1" placeholder="Female">
+    <button type="submit"> Predict</button>
+</form>
+predictions :{{msg}}
+
+<p class="important">
+
+    Welcome to my awesome homepage.
+    {% endblock %}
